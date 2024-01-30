@@ -1,0 +1,45 @@
+table {
+  border-collapse: collapse;
+  /*definimos el color de la linea*/
+  border: 10px solid;
+}
+tr {
+  border: 5px solid;
+  height: 100px;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+  background: #fdd887;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd) {
+  background: #7a4f26fd;
+}
+
+td {
+  border: 5px solid;
+  width: 100px;
+}
+
+button {
+  background-color: transparent; 
+  cursor: pointer; 
+}
+
+/* Estilo para las imágenes dentro de los botones */
+button img {
+  width: 100%; 
+  height: auto; 
+  max-width: 100px;
+}
+
+/* Reducir la opacidad del botón cuando se pasa el cursor sobre él */
+button:hover {
+  opacity: 0.8; 
+}
